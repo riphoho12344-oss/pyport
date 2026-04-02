@@ -8,5 +8,4 @@ Key Features
 - Customizable: Supports user-defined target IPs and port ranges.
 
 
-
-
+! This tool is intended for educational, research, and authorized security testing purposes only. !
