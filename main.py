@@ -22,10 +22,14 @@ def a(port, g):
             x.append(port)
         except:
             pass
-for i in range(1,int(m)):
-    l = threading.Thread(target=a,args=(i,g))
-    l.start()
-
+try:
+    for i in range(1,int(m)):
+        l = threading.Thread(target=a,args=(i,g))
+        l.start()
+except:
+    for i in range(1,3000):
+        l = threading.Thread(target=a,args=(i,g))
+        l.start()
 r = input('want nmap for more sure serve?(y/n)')
 l = ''
 if(r == 'y'):
