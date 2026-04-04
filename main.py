@@ -8,9 +8,11 @@ if len(g) > 1:
 else:
      exit()
 try:
-    m = int(input('port 0-?(default 0-3000): '))
+    m = input('port 0-?(default 0-3000 or all for 65535 port): ')
+    if m == 'all':
+        m = 65535
 except:
-    m = 3000 
+    m = 3000
 def a(port, g):
         try:
             s = socket.socket(socket.AF_INET,socket.SOCK_STREAM,0) 
@@ -20,7 +22,7 @@ def a(port, g):
             x.append(port)
         except:
             pass
-for i in range(1,m):
+for i in range(1,int(m)):
     l = threading.Thread(target=a,args=(i,g))
     l.start()
 
