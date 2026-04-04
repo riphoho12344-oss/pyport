@@ -1,5 +1,5 @@
 # pyport
-A lightweight security tool that combines high-concurrency scanning using Python sockets with deep service identification via Nmap.
+A lightweight security tool that combines high-concurrency scanning using Python sockets with deep service identification via Nmap.for the ctf players.
 
 **Key Features**
 1. **High-Speed Scanning**
